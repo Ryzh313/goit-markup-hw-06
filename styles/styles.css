@@ -926,10 +926,44 @@ body {
 }
 
 .modal-form-checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
   margin-bottom: 30px;
+  padding: 5px 12px;
+
+  font-size: 14px;
+  line-height: 1.71;
+  /* identical to box height, or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
+
+  cursor: pointer;
 }
 
-.input-svg {
+.checkbox-svg {
+  margin-right: 9px;
+
+  border: 2px solid var(--primery-black-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.checkbox-svg-icon {
+}
+
+.checkbox-link {
+  margin-left: 3px;
+
+  font-size: 14px;
+  line-height: 1.71;
+  /* identical to box height, or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: var(--accent-blue-color);
 }
 
 .modal-form-button {
