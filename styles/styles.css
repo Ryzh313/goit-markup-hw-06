@@ -888,6 +888,11 @@ body {
   flex-direction: column;
 }
 
+.modal-input-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .modal-form-label {
   position: relative;
 
@@ -979,8 +984,8 @@ body {
 .modal-form-checkbox-wrapper {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
-  padding: 5px 12px;
 
   font-size: 14px;
   line-height: 1.71;
