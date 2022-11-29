@@ -322,6 +322,9 @@ body {
   border-radius: 4px;
 
   outline: transparent;
+
+  transition: border-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .email-input:hover,
@@ -479,8 +482,23 @@ body {
   color: var(--secondary-text-color);
 }
 
+/*========== Особливості =========== */
+
+/*========== Чим ми займаємось ========== */
+.images {
+  padding-top: 0;
+}
+
+.images-list {
+  display: flex;
+}
+
 .img {
   position: relative;
+}
+
+.img:not(:last-child) {
+  margin-right: 30px;
 }
 
 .images-label {
@@ -508,21 +526,6 @@ body {
   text-transform: uppercase;
 
   color: #ffffff;
-}
-
-/*========== Особливості =========== */
-
-/*========== Чим ми займаємось ========== */
-.images {
-  padding-top: 0;
-}
-
-.images-list {
-  display: flex;
-}
-
-.img:not(:last-child) {
-  margin-right: 30px;
 }
 
 .images-title {
@@ -871,6 +874,10 @@ body {
   cursor: pointer;
 }
 
+.modal-close-button:focus .icon-close-black {
+  fill: var(--accent-blue-color);
+}
+
 .icon-close-black {
   fill: var(--accent-black-color);
 
@@ -878,8 +885,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-close-black:hover,
-.icon-close-black:focus {
+.icon-close-black:hover {
   fill: var(--accent-blue-color);
 }
 
@@ -907,8 +913,6 @@ body {
 }
 
 .modal-form-label {
-  /* position: relative; */
-
   margin-bottom: 4px;
 
   font-size: 12px;
@@ -921,8 +925,6 @@ body {
 }
 
 .modal-form-input {
-  /* position: relative; */
-
   width: 448px;
   height: 40px;
   margin-bottom: 10px;
